@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="_07_57_am">07:57 AM</string>
+    <string name="sunset">Sunset</string>
+    <string name="_07_59_am">07:59 AM</string>
+    <string name="wind">wind</string>
+    <string name="_07_58_am">07:59 AM</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="this_is_new_today">This is new today</string>
+</resources>

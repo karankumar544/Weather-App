@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/j3"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="126dp"
+        android:layout_height="78dp"
+        android:src="@drawable/cloudy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/loginprocetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="150dp"
+        android:text="Proceed with your"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLogo" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:clickable="false"
+        android:text="Login"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/loginprocetext"
+        app:layout_constraintStart_toStartOf="@+id/loginprocetext"
+        app:layout_constraintTop_toBottomOf="@+id/loginprocetext" />
+
+    <EditText
+        android:id="@+id/UserEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_line"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Username or Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+    <EditText
+        android:id="@+id/UserPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_line"
+        android:drawableLeft="@drawable/baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName|textPassword"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/UserEmail"
+        app:layout_constraintStart_toStartOf="@+id/UserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/UserEmail" />
+
+    <Button
+        android:id="@+id/btnloginSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/UserPassword"
+        app:layout_constraintStart_toStartOf="@+id/UserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/UserPassword" />
+
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Forgot Password?"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnloginSubmit"
+        app:layout_constraintStart_toStartOf="@+id/btnloginSubmit"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginSubmit" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btnloginSubmit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnloginSubmit"
+        app:layout_constraintTop_toBottomOf="@+id/forgetPassword">
+
+        <TextView
+            android:id="@+id/createanAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="create an account"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SingUp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
